@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .desktop{
+            width: 100%;
+            object-fit: cover;
+        }
+        .mobile{
+            display: none;
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            .desktop{
+          display: none;
+        }
+        .mobile{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+         }
+    </style>
+</head>
+<body>
+   <figure>
+    <img src='pexels-pixabay-280222.jpg' alt='#' class="desktop">
+    <img src="short.jpg" alt='#' class="mobile">
+   </figure>
+</body>
+</html>
